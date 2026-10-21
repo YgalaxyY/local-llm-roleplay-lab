@@ -1,0 +1,11 @@
+{
+  "display_name": "CleanUI",
+  "loading_order": 200,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "Denis Bm (setup customization)",
+  "version": "1.1.0",
+  "description": "Simplified roleplay UI. Hidden controls are a presentation preference, not access control."
+}

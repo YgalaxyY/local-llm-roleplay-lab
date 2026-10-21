@@ -1,0 +1,141 @@
+/* ====================================================================
+   CleanUI — клиентский режим SillyTavern
+   Скрывает все технические панели, оставляет чат + ввод + персонаж.
+   Переключение: Ctrl+Shift+A (добавляет/убирает класс .cleanui-advanced-mode на body)
+   ==================================================================== */
+
+/* ======= СКРЫВАЕМ ТЕХНИЧЕСКИЕ ПАНЕЛИ ======= */
+
+/* Левая панель — AI Response Configuration (слайдеры, пресеты) */
+body:not(.cleanui-advanced-mode) #ai-config-button {
+    display: none !important;
+}
+
+/* Панель API Connections */
+body:not(.cleanui-advanced-mode) #sys-settings-button {
+    display: none !important;
+}
+
+/* Advanced Formatting */
+body:not(.cleanui-advanced-mode) #advanced-formatting-button {
+    display: none !important;
+}
+
+/* Extensions panel */
+body:not(.cleanui-advanced-mode) #extensions-settings-button {
+    display: none !important;
+}
+
+/* Persona Management */
+body:not(.cleanui-advanced-mode) #persona-management-button {
+    display: none !important;
+}
+
+/* World Info / Lorebook */
+body:not(.cleanui-advanced-mode) #WI-SP-button {
+    display: none !important;
+}
+
+/* User Settings drawer (иконка шестерёнки) */
+body:not(.cleanui-advanced-mode) #user-settings-button {
+    display: none !important;
+}
+
+/* Backgrounds (выбор фона) */
+body:not(.cleanui-advanced-mode) #backgrounds-button {
+    display: none !important;
+}
+
+/* ======= УПРОЩАЕМ ПРАВУЮ ПАНЕЛЬ ПЕРСОНАЖЕЙ ======= */
+
+/* Скрываем кнопку lock/pin панели */
+body:not(.cleanui-advanced-mode) #rm_button_panel_pin_div {
+    display: none !important;
+}
+
+/* Скрываем техническую информацию о токенах */
+body:not(.cleanui-advanced-mode) #result_info {
+    display: none !important;
+}
+
+/* Скрываем кнопки создания/редактирования персонажа (Advanced, Export, Dupe, Delete, World, Lore) */
+body:not(.cleanui-advanced-mode) #advanced_div,
+body:not(.cleanui-advanced-mode) #world_button,
+body:not(.cleanui-advanced-mode) .chat_lorebook_button,
+body:not(.cleanui-advanced-mode) #char_connections_button,
+body:not(.cleanui-advanced-mode) #export_button,
+body:not(.cleanui-advanced-mode) #dupe_button,
+body:not(.cleanui-advanced-mode) #delete_button,
+body:not(.cleanui-advanced-mode) #create_button_label,
+body:not(.cleanui-advanced-mode) #char-management-dropdown {
+    display: none !important;
+}
+
+/* Скрываем Advanced Definitions popup */
+body:not(.cleanui-advanced-mode) #character_popup {
+    display: none !important;
+}
+
+/* ======= УПРОЩАЕМ ОБЛАСТЬ ВВОДА ======= */
+
+/* STScript кнопки (play/pause/stop) */
+body:not(.cleanui-advanced-mode) .stscript_btn {
+    display: none !important;
+}
+
+/* Impersonate кнопка */
+body:not(.cleanui-advanced-mode) #mes_impersonate {
+    display: none !important;
+}
+
+/* Continue кнопка */
+body:not(.cleanui-advanced-mode) #mes_continue {
+    display: none !important;
+}
+
+/* ======= УПРОЩАЕМ БУРГЕР-МЕНЮ (Options) ======= */
+
+/* Скрываем технические пункты в Options */
+body:not(.cleanui-advanced-mode) #option_settings,
+body:not(.cleanui-advanced-mode) #option_toggle_AN,
+body:not(.cleanui-advanced-mode) #option_toggle_CFG,
+body:not(.cleanui-advanced-mode) #option_toggle_logprobs,
+body:not(.cleanui-advanced-mode) #option_back_to_main,
+body:not(.cleanui-advanced-mode) #option_new_bookmark,
+body:not(.cleanui-advanced-mode) #option_convert_to_group,
+body:not(.cleanui-advanced-mode) #option_impersonate {
+    display: none !important;
+}
+
+/* Скрываем разделители hr в options, если остались лишние */
+body:not(.cleanui-advanced-mode) #options .options-content > hr {
+    display: none !important;
+}
+
+/* ======= СКРЫВАЕМ FLOATING PANELS ======= */
+
+/* Author's Note panel */
+body:not(.cleanui-advanced-mode) #floatingPrompt {
+    display: none !important;
+}
+
+/* CFG panel */
+body:not(.cleanui-advanced-mode) #cfgConfig {
+    display: none !important;
+}
+
+/* Logprobs viewer */
+body:not(.cleanui-advanced-mode) #logprobsViewer {
+    display: none !important;
+}
+
+/* ======= СКРЫВАЕМ ЭЛЕМЕНТЫ СООБЩЕНИЙ ======= */
+
+/* Скрываем техническую кнопку "token count" под сообщениями */
+body:not(.cleanui-advanced-mode) .tokenCounterDisplay {
+    display: none !important;
+}
+
+
+#cleanui-toggle { position:fixed; bottom:12px; left:12px; z-index:9999; padding:7px 12px; border:1px solid #8794a3; border-radius:8px; background:#1c2430; color:#eef2f6; font:12px system-ui,sans-serif; cursor:pointer; }
+#cleanui-toggle:focus-visible { outline:2px solid #c4b5fd; outline-offset:3px; }

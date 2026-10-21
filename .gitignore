@@ -1,0 +1,11 @@
+node_modules/
+.env*
+data/
+logs/
+backups/
+*.log
+*.key
+*.pem
+*.safetensors
+*.gguf
+__pycache__/

@@ -6,6 +6,10 @@ A local-model roleplay setup built around [SillyTavern](https://github.com/Silly
 
 **Contribution:** interface customization, integration and deployment configuration. SillyTavern, inference engines and model weights are third-party components; this project does not claim their authorship or model training.
 
+## Project context
+
+This personal setup and its custom extension were assembled with AI assistance. The repository presents a learning project around existing tools, with upstream attribution retained. It does not represent independent development of SillyTavern or the language models.
+
 ## Architecture
 
 ```text
